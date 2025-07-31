@@ -41,6 +41,6 @@ docker run -it -d -e SERPER_API_KEY=b3cf... serper-mcp-server
 ## Agent Client
 
 ```cmd
-uv add langchain-openai
-uv add langgraph
+uv run .\fastmcp_serper_client.py
+uv run .\docker_serper_client.py
 ```
