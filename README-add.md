@@ -37,3 +37,10 @@ docker build -t serper-mcp-server .
 docker run -it --rm -e SERPER_API_KEY=b3cf... serper-mcp-server
 docker run -it -d -e SERPER_API_KEY=b3cf... serper-mcp-server
 ```
+
+## Agent Client
+
+```cmd
+uv add langchain-openai
+uv add langgraph
+```

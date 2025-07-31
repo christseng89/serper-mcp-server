@@ -11,7 +11,14 @@ requires-python = ">=3.11"
 dependencies = [
     "aiohttp>=3.11.16",
     "certifi>=2025.1.31",
+    "fastmcp>=2.10.6",
+    "langchain>=0.3.27",
+    "langchain-mcp-adapters>=0.1.9",
+    "langchain-openai>=0.3.28",
+    "langgraph>=0.6.2",
+    "langgraph-prebuilt>=0.6.2",
     "mcp[cli]>=1.6.0",
+    "openai>=1.98.0",
     "pydantic>=2.11.2",
     "python-dotenv>=1.1.0",
 ]
