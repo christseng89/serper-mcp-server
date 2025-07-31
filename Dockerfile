@@ -6,7 +6,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copy project files
-COPY pyproject.toml poetry.lock* ./
+COPY pyproject.toml ./
 COPY src ./src
 COPY README.md ./
 
@@ -15,8 +15,8 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends build-essential && \
     rm -rf /var/lib/apt/lists/*
 
-# Install Python dependencies
-RUN pip install --no-cache-dir .
+# Install Python dependencies directly from pyproject.toml
+RUN pip install --no-cache-dir -e .
 
-# Default command
-ENTRYPOINT ["serper-mcp-server"]
+# Default command - use python module instead of direct executable
+ENTRYPOINT ["python", "-m", "serper_mcp_server"]

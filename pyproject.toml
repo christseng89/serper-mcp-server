@@ -23,4 +23,4 @@ dependencies = [
 
 
 [project.scripts]
-serper-mcp-server = "serper_mcp_server:main"
+serper-mcp-server = "serper_mcp_server.server:main"
