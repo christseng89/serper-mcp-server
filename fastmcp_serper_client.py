@@ -71,7 +71,8 @@ async def main():
     # Example questions
     questions = [
         "What is the weather in Taipei?",
-        "What is the benefit of using FastMCP?"
+        "What is the benefit of using FastMCP?",
+        "What is the most popular Agentic AI technology as of today?",
     ]
 
     for q in questions:
